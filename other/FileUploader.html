@@ -1,0 +1,59 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>
+        FILE UPLOADER
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Upload Files To My Google Drive</h1>  
+<div id="grad1">        
+        <div class="details">
+            <form name="myform" onsubmit="return x()" required>
+                <span>UserName</span><br><br>
+                <input type="text" id="inp" placeholder="UserName" required = "required" name="user"/>
+                <span>Email</span><br><br>
+                <input type="email" id="inp" placeholder="Email Address" name="mail"/>
+                <span>Add coment</span><br><br>
+                <input type="text" id="inp" placeholder="Add Comment" rrequired = "required" name="Comment">
+                <span>select file</span><br><br>
+                <input type="file" id="inp" required = "required" name="ffile">
+            <div class="btns">
+                
+            <button id="one" onclick="x()">Submit</button> 
+        </form>
+        
+    </div>
+    
+    <script>
+        let x = ()=>{
+            
+            let a = document.forms["myform"]["user"].value; 
+            let b = document.forms["myform"]["mail"].value; 
+            let c = document.forms["myform"]["Comment"].value; 
+            let d = document.forms["myform"]["ffile"].value; 
+            if(a === null || a === ""){
+                alert("Please Enter the UserName");
+                return false;
+            }
+            if(b === null || b === ""){
+                alert("Enter Email Address");
+                return false;
+            }
+            if(c === null || c === ""){
+                alert("Please Add a Comment ");
+                return false;
+            }
+            if(d === null || d === ""){
+                alert("Select A File");
+                return false;
+            }
+            else{
+                alert("File Had Uploaded To The Server")
+            }
+        }
+    </script>
+
+</body>
+</html>

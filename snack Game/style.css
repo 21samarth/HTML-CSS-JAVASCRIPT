@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@585&family=Madimi+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    min-height: 100vh;
+    background: url("./bd.jpg");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#board{
+    background-color: rgba(255, 255, 255, 0.432);
+    width: 90vmin;
+    height: 92vmin;
+    border: 5px solid rgba(253, 196, 7, 0.466);
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+.head{
+    background-color: greenyellow;
+    border-radius: 50%;
+}
+.snake{
+    background-color: rgb(172, 255, 47);
+    border-radius: 50%;
+}
+.food{
+    background: radial-gradient(white, green, greenyellow);
+    border: .50vmin solid black;
+    border-radius: 15px;
+}
+#score{
+    position: absolute;
+    top: 9px;
+    right: 100px;
+    font-size: 40px;
+    color: white;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 585;
+    font-style: normal;
+}
+
+#hiscore{
+    position: absolute;
+    top: 59px;
+    right: 100px;
+    font-size: 40px;
+    color: white;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 585;
+    font-style: normal;
+}
+
+#btn{
+    position: absolute;
+    top: 19px;
+    left: 200px;
+    color: white;
+    font-size: 20px;
+    background: transparent;
+    padding: 5px;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+#btn:hover{
+    box-shadow: 5px 5px black;
+}
